@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>珊瑚品种介绍</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      background-color: #f5f5f7;
+      color: #1d1d1f;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #edf6f9;
+      padding: 10px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #003d3d;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 20px;
+    }
+
+    .coral-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .coral-card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      width: 200px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .coral-card img {
+      width: 100%;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+
+    .contact {
+      background-color: #edf6f9;
+      padding: 20px;
+      margin-top: 30px;
+      border-top: 2px solid #83c5be;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #006d77;
+      color: white;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .btn-toggle {
+      padding: 10px 20px;
+      border: none;
+      background-color: #0071e3;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .btn-toggle:hover {
+      background-color: #005bb5;
+    }
+  </style>
+</head>
+<body>
+  <header>珊瑚品种介绍</header>
+
+  <nav>
+    <a href="#soft">软珊瑚</a>
+    <a href="#hard">硬珊瑚</a>
+    <a href="#contact">联系我们</a>
+  </nav>
+
+  <div class="section" id="soft">
+    <h2>🌿 软体珊瑚</h2>
+    <div class="coral-grid" id="softGrid">
+      <!-- 卡片内容保留不变 -->
+    </div>
+    <div style="text-align: center">
+      <button id="softLoad" class="btn-toggle" onclick="loadMore('soft')">显示更多软珊瑚</button>
+      <button id="softCollapse" class="btn-toggle hidden" onclick="collapse('soft')">收起</button>
+    </div>
+  </div>
+
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>珊瑚品种介绍</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      background-color: #f5f5f7;
+      color: #1d1d1f;
+    }
+
+    header {
+      background-color: #ffffff;
+      padding: 20px;
+      text-align: center;
+      font-size: 24px;
+      font-weight: bold;
+    }
+
+    nav {
+      display: flex;
+      justify-content: space-around;
+      background-color: #edf6f9;
+      padding: 10px 0;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: #003d3d;
+      font-weight: bold;
+    }
+
+    .section {
+      padding: 20px;
+    }
+
+    .coral-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+      justify-items: center;
+    }
+
+    .coral-card {
+      background: white;
+      padding: 15px;
+      border-radius: 10px;
+      width: 200px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+   .coral-card img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+
+    .contact {
+      background-color: #edf6f9;
+      padding: 20px;
+      margin-top: 30px;
+      border-top: 2px solid #83c5be;
+    }
+
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #006d77;
+      color: white;
+    }
+
+    .hidden {
+      display: none;
+    }
+
+    .btn-toggle {
+      padding: 10px 20px;
+      border: none;
+      background-color: #0071e3;
+      color: white;
+      border-radius: 6px;
+      cursor: pointer;
+      margin-top: 10px;
+    }
+
+    .btn-toggle:hover {
+      background-color: #005bb5;
+    }
+  </style>
+<style>
+  #imageModal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+  }
+  #imageModal img {
+    max-width: 90vw;
+    max-height: 90vh;
+    border-radius: 8px;
+  }
+</style>
+</head>
+<body>
+  <header>珊瑚品种介绍</header>
+
+  <nav>
+    <a href="#soft">软珊瑚</a>
+    <a href="#hard">硬珊瑚</a>
+    <a href="#contact">联系我们</a>
+  </nav>
+
+  <div class="section" id="soft">
+    <h2>🌿 软体珊瑚</h2>
+    <div class="coral-grid" id="softGrid">
+  <div class="coral-card"><img src="甜筒脑.jpg" alt=""><h3>甜筒脑</h3><p>纹理独特的软体珊瑚</p></div>
+  <div class="coral-card"><img src="moli.jpg" alt=""><h3>茉莉</h3><p>柔和光泽，常见品种</p></div>
+  <div class="coral-card"><img src="waluan.jpg" alt=""><h3>蛙卵</h3><p>圆润质感，适合新手</p></div>
+  <div class="coral-card"><img src="waluan.png" alt=""><h3>蛙卵（图二）</h3><p>另一种图像格式展示</p></div>
+  <div class="coral-card"><img src="澳洲茉莉.jpg" alt=""><h3>澳洲茉莉</h3><p>来自南半球的柔软水晶</p></div>
+  <div class="coral-card"><img src="蛋黄.jpg" alt=""><h3>蛋黄</h3><p>色泽明亮如蛋黄</p></div>
+</div>
+    <div style="text-align: center">
+      <button id="softLoad" class="btn-toggle" onclick="loadMore('soft')">显示更多软珊瑚</button>
+      <button id="softCollapse" class="btn-toggle hidden" onclick="collapse('soft')">收起</button>
+    </div>
+  </div>
+
+  <div class="section" id="hard">
+    <h2>🪨 硬珊瑚</h2>
+    <div class="coral-grid" id="hardGrid">
+  <div class="coral-card"><img src="duokonglujiao.jpg" alt=""><h3>多孔鹿角</h3><p>多分支造型</p></div>
+  <div class="coral-card"><img src="富士脑.jpg" alt=""><h3>富士脑</h3><p>立体折纹，经典脑珊瑚</p></div>
+  <div class="coral-card"><img src="金单苞.jpg" alt=""><h3>金单苞</h3><p>金色单头品系</p></div>
+  <div class="coral-card"><img src="龙须金.jpg" alt=""><h3>龙须金</h3><p>造型修长，金色光泽</p></div>
+  <div class="coral-card"><img src="沙巴圣杯.jpg" alt=""><h3>沙巴圣杯</h3><p>神秘夜光圣杯珊瑚</p></div>
+  <div class="coral-card"><img src="甜甜圈.jpg" alt=""><h3>甜甜圈</h3><p>形如甜圈的硬珊瑚</p></div>
+  <div class="coral-card"><img src="星空花园.jpg" alt=""><h3>星空花园</h3><p>多色混合，如银河绽放</p></div>
+</div>
+    <div style="text-align: center">
+      <button id="hardLoad" class="btn-toggle" onclick="loadMore('hard')">显示更多硬珊瑚</button>
+      <button id="hardCollapse" class="btn-toggle hidden" onclick="collapse('hard')">收起</button>
+    </div>
+  </div>
+
+  <div class="section contact" id="contact"style="text-align: center">
+    <h2>📱 联系我们</h2>
+    <p>微信号：your-wechat-id</p>
+<img src="lianxi.jpg" alt="微信二维码" style="max-width: 200px; height: auto;" />
+
+  </div>
+
+  <footer>© 2025 珊瑚世界 Coral World</footer>
+
+  <script>
+    function initDisplay(sectionId) {
+      const cards = document.querySelectorAll(`#${sectionId}Grid .coral-card`);
+      cards.forEach((card, index) => {
+        card.style.display = index < 5 ? 'block' : 'none';
+        if (index >= 5) card.classList.add('hidden');
+      });
+    }
+
+    function loadMore(sectionId) {
+      const cards = document.querySelectorAll(`#${sectionId}Grid .coral-card.hidden`);
+      let count = 0;
+      cards.forEach(card => {
+        if (count < 5) {
+          card.classList.remove('hidden');
+          card.style.display = 'block';
+          count++;
+        }
+      });
+      if (document.querySelectorAll(`#${sectionId}Grid .coral-card.hidden`).length === 0) {
+        document.getElementById(`${sectionId}Load`).classList.add('hidden');
+        document.getElementById(`${sectionId}Collapse`).classList.remove('hidden');
+      }
+    }
+
+    function collapse(sectionId) {
+      const cards = document.querySelectorAll(`#${sectionId}Grid .coral-card`);
+      cards.forEach((card, index) => {
+        if (index < 5) {
+          card.style.display = 'block';
+          card.classList.remove('hidden');
+        } else {
+          card.style.display = 'none';
+          card.classList.add('hidden');
+        }
+      });
+      document.getElementById(`${sectionId}Load`).classList.remove('hidden');
+      document.getElementById(`${sectionId}Collapse`).classList.add('hidden');
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      initDisplay('soft');
+      initDisplay('hard');
+    });
+  </script>
+<div id="imageModal" onclick="this.style.display='none'">
+  <img src="" alt="大图预览" id="modalImage" />
+</div>
+
+<script>
+  document.querySelectorAll('.coral-card img').forEach(img => {
+    img.addEventListener('click', (e) => {
+      document.getElementById('modalImage').src = img.src;
+      document.getElementById('imageModal').style.display = 'flex';
+    });
+
+    img.addEventListener('dblclick', (e) => {
+      const coralName = img.closest('.coral-card').querySelector('h3').innerText;
+      const urlName = encodeURIComponent(coralName.trim());
+      window.open(`details.html?name=${urlName}`, '_blank');
+    });
+  });
+</script>
+</body>
+</html>
