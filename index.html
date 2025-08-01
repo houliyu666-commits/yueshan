@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="zh">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>悦珊 YUESHAN - 首页</title>
+  <style>
+    /* 页面基础设置 */
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", sans-serif;
+      background-color: #ffffff;
+      color: #333;
+    }
+
+    /* 顶部导航栏 */
+    header {
+      background-color: #ffffff;
+      padding: 20px 40px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+
+    header img.logo {
+      height: 48px;
+    }
+
+    nav a {
+      margin-left: 30px;
+      text-decoration: none;
+      color: #333;
+      font-weight: 500;
+    }
+
+    nav a:hover {
+      color: #0071e3;
+    }
+
+    /* 英雄区域（首页主视觉） */
+    .hero {
+      text-align: center;
+      padding: 100px 20px;
+    }
+
+    .hero h1 {
+      font-size: 48px;
+      margin-bottom: 20px;
+    }
+
+    .hero p {
+      font-size: 18px;
+      color: #555;
+      max-width: 700px;
+      margin: 0 auto 40px;
+    }
+
+    .hero a.button {
+      background-color: #0071e3;
+      color: white;
+      padding: 12px 24px;
+      border-radius: 8px;
+      font-weight: 600;
+      text-decoration: none;
+    }
+
+    .hero a.button:hover {
+      background-color: #005bb5;
+    }
+
+    /* 自定义内容区（预留填充） */
+    .section {
+      padding: 80px 20px;
+      text-align: center;
+    }
+
+    .section h2 {
+      font-size: 32px;
+      margin-bottom: 20px;
+    }
+
+    .section p {
+      color: #666;
+      max-width: 700px;
+      margin: 0 auto;
+    }
+
+    /* 页脚样式 */
+    footer {
+      background-color: #f5f5f7;
+      color: #888;
+      font-size: 14px;
+      padding: 40px 20px;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <!-- 顶部导航 -->
+  <header>
+    <!-- logo 图像部分 -->
+    <img src="logo.jpg" alt="悦珊 logo" class="logo">
+    <nav>
+      <a href="#about">关于我们</a>
+      <a href="coral.html">珊瑚品种介绍</a>
+      <a href="#contact">联系我们</a>
+    </nav>
+  </header>
+
+  <!-- 首页视觉主区 -->
+  <section class="hero">
+    <h1>悦珊 YUESHAN</h1>
+    <p>珊瑚的艺术 · 海洋的温度 —— 我们致力于打造美丽、自然、可持续的水族生态。</p>
+    <a class="button" href="coral.html">探索珊瑚世界</a>
+  </section>
+
+  <!-- 关于我们部分（可自行替换填充） -->
+  <section class="section" id="about">
+    <h2>关于悦珊</h2>
+    <p>（此处留空供您填写：悦珊公司理念、创办背景、核心团队等介绍。）</p>
+  </section>
+
+  <!-- 联系我们部分（微信或表单可选） -->
+  <section class="section" id="contact">
+    <h2>联系我们</h2>
+    <p>微信号：yueshanenso</p>
+   <img src="lianxi.jpg" alt="微信二维码" style="max-width: 200px; height: auto;" />
+
+  </section>
+
+  <!-- 页脚 -->
+  <footer>
+    &copy; 2025 悦珊 YUESHAN | 专注珊瑚生态美学
+  </footer>
+</body>
+</html>
